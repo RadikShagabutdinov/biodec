@@ -1,0 +1,12 @@
+.main {
+  position: relative;
+  max-width: 1440px;
+  min-width: 1024px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+.content {
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 170px;
+}

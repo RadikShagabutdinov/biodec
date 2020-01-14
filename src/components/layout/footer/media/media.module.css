@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  list-style-type: none;
+}
+
+.item {
+  margin-left: 16px;
+}
+.link:first-child {
+  margin-left: 0;
+}
+
+.link {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.fb {
+  background: url('./facebook.svg') scroll no-repeat center / 28px;
+}
+.vk::after {
+  background: url('./vk.svg') scroll no-repeat center / contain;
+}

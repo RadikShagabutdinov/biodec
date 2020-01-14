@@ -1,0 +1,33 @@
+.field {
+  font-size: 14px;
+  border-radius: 2px;
+  border: 1px solid #808080;
+  height: 30px;
+  padding: 0 8px;
+  min-width: 40px;
+}
+
+.fieldWrapper {
+  padding-right: 10px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: capitalize;
+  margin-left: 20px;
+}
+
+.btn {
+  font-size: 14px;
+  height: 30px;
+  color: #fff;
+  border: 0 none;
+  background-color: rgb(56, 128, 108);
+  padding: 0 24px;
+}

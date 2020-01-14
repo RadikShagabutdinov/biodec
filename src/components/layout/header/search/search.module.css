@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+}
+.field {
+  font-size: 14px;
+  border-radius: 2px;
+  border: 1px solid #808080;
+  height: 30px;
+  padding: 0 8px 0 30px;
+}
+.fieldWrapper {
+  position: relative;
+}
+.fieldWrapper::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url("./search-24px.svg") scroll no-repeat;
+  left: 4px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}

@@ -1,0 +1,48 @@
+
+html, body, #___gatsby, #gatsby-focus-wrapper {
+  height: 100%;
+  min-height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #808080;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* START OF ARTICLE GLOBAL STYLE */
+.article {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.667;
+}
+.article b, .article strong {
+  font-weight: bold;
+}
+.article p, .article ul {
+  margin-bottom: 24px;
+}
+.article ul {
+  list-style-position: inside;
+  list-style-type: none;
+}
+.article li {
+  padding-left: 24px;
+  position: relative;
+}
+.article li::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: rgb(56, 128, 108);
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  left: 6px;
+}
+/* END OF ARTICLE GLOBAL STYLE */
