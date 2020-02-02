@@ -1,0 +1,9 @@
+.content {
+  padding-top: 30px;
+}
+.list {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  list-style-type: none;
+}

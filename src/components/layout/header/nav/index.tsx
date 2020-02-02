@@ -7,23 +7,16 @@ function Nav() {
     <nav className={styles.container}>
       <ul className={styles.list}>
         <li className={styles.item}>
-          <Link
-            className={styles.link}
-            activeClassName={styles.active}
-            to="/"
-          >Домой</Link>
-        </li>
-        <li className={styles.item}>
           <Link className={styles.link} activeClassName={styles.active} to="/about">О нас</Link>
-        </li>
-        <li className={styles.item}>
-          <Link className={styles.link} activeClassName={styles.active} to="/news">новости</Link>
         </li>
         <li className={styles.item}>
           <Link className={styles.link} activeClassName={styles.active} to="/product">продукты</Link>
         </li>
         <li className={styles.item}>
           <Link className={styles.link} activeClassName={styles.active} to="/papers">документы</Link>
+        </li>
+        <li className={styles.item}>
+          <Link className={styles.link} activeClassName={styles.active} to="/faq">FAQ</Link>
         </li>
         <li className={styles.item}>
           <Link className={styles.link} activeClassName={styles.active} to="/contacts">контакты</Link>

@@ -7,32 +7,12 @@ function Media() {
     <ul className={styles.container}>
       <li className={styles.item}>
         <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={cx(styles.link, styles.vk)}
-        >
-          <span hidden>В контакте</span>
-        </a>
-      </li>
-      <li className={styles.item}>
-        <a
-          href="#"
+          href="https://www.facebook.com/biodecltd"
           target="_blank"
           rel="noopener noreferrer"
           className={cx(styles.link, styles.fb)}
         >
           <span hidden>Facebook</span>
-        </a>
-      </li>
-      <li className={styles.item}>
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={cx(styles.link, styles.tw)}
-        >
-          <span hidden>Twitter</span>
         </a>
       </li>
     </ul>

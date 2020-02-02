@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic');
 
 html, body, #___gatsby, #gatsby-focus-wrapper {
   height: 100%;
@@ -9,7 +10,13 @@ html, body, #___gatsby, #gatsby-focus-wrapper {
   padding: 0;
   color: #808080;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
+}
+
+.inner {
+  max-width: 1440px;
+  min-width: 1024px;
+  padding: 0 40px;
 }
 
 /* START OF ARTICLE GLOBAL STYLE */
@@ -18,6 +25,15 @@ html, body, #___gatsby, #gatsby-focus-wrapper {
   font-size: 14px;
   line-height: 1.667;
 }
+.article h3 {
+  font-size: 18px;
+}
+
+.article .link {
+  color: rgb(56, 128, 108);
+  text-decoration: none;
+}
+
 .article b, .article strong {
   font-weight: bold;
 }
@@ -31,8 +47,9 @@ html, body, #___gatsby, #gatsby-focus-wrapper {
 .article li {
   padding-left: 24px;
   position: relative;
+  margin-bottom: 10px;
 }
-.article li::before {
+.article ul li::before {
   content: "";
   position: absolute;
   margin: auto;
@@ -41,8 +58,14 @@ html, body, #___gatsby, #gatsby-focus-wrapper {
   border-radius: 50%;
   background-color: rgb(56, 128, 108);
   display: inline-block;
-  top: 0;
-  bottom: 0;
+  top: 8px;
   left: 6px;
+}
+
+.article ol {
+  list-style-position: outside;
+}
+.article ol li {
+  padding-left: 15px;
 }
 /* END OF ARTICLE GLOBAL STYLE */

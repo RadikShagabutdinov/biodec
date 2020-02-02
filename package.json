@@ -22,6 +22,7 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.9",
     "@types/css-modules": "^1.0.0",
     "@types/node": "^13.1.0",
     "@types/react": "^16.9.17",

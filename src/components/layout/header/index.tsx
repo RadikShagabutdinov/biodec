@@ -1,24 +1,32 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
-import Search from './search';
-import Auth from './auth';
+import { Link, useStaticQuery, graphql } from 'gatsby';
+import cx from 'classnames';
 import Nav from './nav';
-
 import styles from './header.module.css';
-import logo from './logo.svg';
 
 function Header() {
+  const data = useStaticQuery(graphql`
+    query {
+      logo: file(relativePath: {eq: "logo.svg"}) {
+        childImageSharp {
+          fluid {
+            tracedSVG
+            src
+            sizes
+          }
+        }
+        publicURL
+      }
+    }
+  `);
   return (
     <header className={styles.container}>
-      <div className={styles.inner}>
+      <div className={cx('inner' ,styles.inner)}>
         <Link to="/" className={styles.link}>
-          <img src={logo} className={styles.logo} alt="Biodec" />
+          <img src={data.logo.publicURL} className={styles.logo} alt="Biodec" />
         </Link>
         <div className={styles.conetent}>
-          <div className={styles.top}>
-            <Search />
-            <Auth />
-          </div>
+          <div className={styles.top} />
           <Nav />
         </div>
       </div>

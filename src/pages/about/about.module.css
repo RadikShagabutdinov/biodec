@@ -11,4 +11,5 @@
 .founder {
   width: 400px;
   float: left;
+  box-shadow: 0px 8px 16px rgba(113, 113, 113, 0.7);
 }
