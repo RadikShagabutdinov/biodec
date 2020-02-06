@@ -8,7 +8,7 @@ html, body, #___gatsby, #gatsby-focus-wrapper {
 * {
   margin: 0;
   padding: 0;
-  color: #808080;
+  color: #414141;
   box-sizing: border-box;
   font-family: 'Roboto';
 }
@@ -22,11 +22,15 @@ html, body, #___gatsby, #gatsby-focus-wrapper {
 /* START OF ARTICLE GLOBAL STYLE */
 .article {
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.667;
-}
-.article h3 {
   font-size: 18px;
+  line-height: 24px;
+}
+
+.title {
+  color: #00826B;
+  font-size: 48px;
+  font-weight: normal;
+  margin-bottom: 48px;
 }
 
 .article .link {

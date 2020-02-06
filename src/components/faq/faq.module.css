@@ -1,0 +1,24 @@
+.container {
+  margin: 120px auto;
+  scroll-margin-top: 130px;
+}
+.title {
+  text-align: center;
+}
+.list {
+  width: 930px;
+  position: relative;
+  margin: 0 auto;
+}
+.item {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.item p {
+  color: #404040;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 16px;
+  line-height: 1.6;
+  /* background-color: #2CAE7C; */
+}

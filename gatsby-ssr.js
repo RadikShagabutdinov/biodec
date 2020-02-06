@@ -4,4 +4,14 @@
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
 
-// You can delete this file if you're not using it
+// const React = require("react");
+
+// exports.onRenderBody = ({ setPostBodyComponents }) => {
+//   setPostBodyComponents([
+//      <script
+//         key="yandex-map"
+//         type="text/javascript"
+//         src="https://api-maps.yandex.ru/2.1/?apikey=5186cfc8-7a0a-44ea-89a7-ecba68d2857c&lang=ru_RU"
+//       />,
+//   ]);
+// }

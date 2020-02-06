@@ -1,0 +1,59 @@
+.container {
+  scroll-margin-top: 130px;
+  margin: 120px auto;
+  display: flex;
+  position: relative;
+}
+.container::before {
+  content: "";
+  background: url("./fon.svg") scroll no-repeat left center;
+  display: block;
+  position: absolute;
+  top: -10%;
+  left: -5%;
+  bottom: -19%;
+  right: 0;
+  opacity: 0.2;
+}
+
+.content {
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-top: auto;
+}
+
+.descreiption {
+  font-size: 24px;
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+
+.text {
+  columns: 2 250px;
+  column-gap: 40px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: auto;
+}
+
+.text p {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+
+.founder {
+  width: 400px;
+  box-shadow: 0px 40px 50px rgba(45, 45, 45, 0.25);
+  flex: 0 0 400px;
+}
+
+.caption {
+  font-weight: bold;
+  text-align: right;
+  margin-top: 40px;
+}

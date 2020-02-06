@@ -1,0 +1,72 @@
+.container {
+  scroll-margin-top: 130px;
+  overflow: hidden;
+}
+.map {
+  height: 400px;
+  width: 100%;
+  background-color: #F0EFEA;
+}
+.content {  
+  position: relative;
+}
+.contacts {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  width: 25%;
+  box-shadow: -10px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.header {
+  background-color: #fff;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  line-height: 26px;
+  position: relative;
+}
+.header::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 40px solid transparent;
+  border-right-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform: translateX(-100%);
+}
+.region {
+  margin-top: auto;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.place {
+  margin-bottom: auto;
+  color: #248E65;
+  font-weight: normal;
+}
+.footer {
+  background-color: #F0EFEA;
+  height: 40%;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  flex-direction: column;
+}
+.tel {
+  display: block;
+  color: #248E65;
+  text-decoration: none;
+  margin-top: auto;
+}
+.mail {
+  text-decoration: none;
+  margin-bottom: auto;
+}

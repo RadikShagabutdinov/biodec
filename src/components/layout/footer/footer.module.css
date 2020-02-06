@@ -1,18 +1,18 @@
 .container {
-  background-color: rgb(56, 128, 108);
+  background-color: #248E65;
   padding: 15px 0;
   color: #fff;
-  height: 150px;
-  margin-top: -150px;
+  height: 60px;
+  margin-top: -60px;
   min-width: 100%;
   min-width: 1024px;
 }
 .inner {
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  height: 120px;
+  align-items: center;
+  height: 100%;
 }
 .copy {
   color: #fff;

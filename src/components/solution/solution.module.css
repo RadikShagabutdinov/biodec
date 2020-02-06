@@ -1,0 +1,26 @@
+.container {
+  margin: 120px auto;
+  padding: 0 40px;
+}
+.content {
+  text-align: center;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.info {
+  width: 100%;
+  height: auto;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.item {
+  list-style-type: none;
+  width: 25%;
+  padding: 0 19px;
+  font-size: 19px;
+  line-height: 28px;
+}

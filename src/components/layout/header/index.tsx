@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import cx from 'classnames';
 import Nav from './nav';
 import styles from './header.module.css';
@@ -22,9 +22,12 @@ function Header() {
   return (
     <header className={styles.container}>
       <div className={cx('inner' ,styles.inner)}>
-        <Link to="/" className={styles.link}>
-          <img src={data.logo.publicURL} className={styles.logo} alt="Biodec" />
-        </Link>
+        <div className={styles.company}>  
+          <a href="/" className={styles.link}>
+            <img src={data.logo.publicURL} className={styles.logo} alt="Biodec" />
+          </a>
+          <p className={styles.slogan}>Экономия для экологии</p>
+        </div>
         <div className={styles.conetent}>
           <div className={styles.top} />
           <Nav />

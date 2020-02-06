@@ -5,12 +5,13 @@
 .list {
   list-style-type: none;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .item {
-  padding: 0 30px;
+  padding: 0 20px;
 }
+
 .item:first-child {
   padding-left: 0;
 }

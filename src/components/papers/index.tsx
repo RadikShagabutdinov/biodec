@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import Layout from '../../components/layout';
+import cx from 'classnames';
 import Thumbnail from '../../components/thumbnail';
 import styles from './papers.module.css';
 
@@ -31,19 +31,18 @@ function Papers() {
     }
   `);
   return (
-    <Layout title="Документы">
-      <article className={styles.content}>
-        <ul className={styles.list}>
-          {
-            group.map(e => (
-              <li className={styles.item} key={e.edges[0].node.id}>
-                <Thumbnail edges={e.edges} />
-              </li>
-            ))
-          }
-        </ul>
-      </article>
-    </Layout>
+    <section id="papers" className={cx('inner', styles.container)}>
+      <h2 className={cx('title', styles.title)}>Документы</h2>
+      <ul className={styles.list}>
+        {
+          group.map(e => (
+            <li className={styles.item} key={e.edges[0].node.id}>
+              <Thumbnail edges={e.edges} />
+            </li>
+          ))
+        }
+      </ul>
+    </section>
   );
 }
 

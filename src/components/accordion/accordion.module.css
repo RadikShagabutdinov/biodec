@@ -1,0 +1,60 @@
+.container {
+  position: relative;
+  width: 100%;
+  will-change: 'background-color';
+  transition: 0.3s all;
+  margin: 0;
+}
+.container.open {
+  margin: 16px 0;
+}
+.container.open .toggler {
+  background-color: #248E65;
+  border-radius: 4px 4px 0 0;
+  color: #fff;
+}
+.container.open .toggler::after {
+  transform: rotate(180deg);
+  background-image: url("./arrow.svg");
+}
+.toggler {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  /* background-color: #F0EFEA; */
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(113, 113, 113, 0.1);
+  /* background-color: 'transparent'; */
+  /* border: 1px solid #248E65; */
+  border: 0 none;
+  color: #000;
+  height: 40px;
+  padding: 0 24px;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: normal;
+  will-change: 'background-color';
+  transition: 0.3s all;
+  outline: none;
+  cursor: pointer;
+}
+.toggler::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("./arrow-g.svg") scroll no-repeat center center;
+  position: absolute;
+  right: 8px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 0.3s transform;
+  will-change: transform;
+}
+
+.content {
+  will-change: all;
+  transition: 0.3s all;
+  overflow: hidden;
+}

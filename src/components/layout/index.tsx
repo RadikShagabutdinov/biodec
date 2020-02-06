@@ -3,6 +3,7 @@ import cx from 'classnames';
 import SEO from '../seo';
 import Header from './header';
 import Footer from './footer';
+
 import styles from './layout.module.css';
 import "./layout.css"
 
@@ -17,7 +18,7 @@ function Layout({ children, title }: Props) {
       <SEO title={title} />
       <div className={styles.content}>
         <Header />
-        <main className={cx('inner', styles.main)}>{children}</main>
+        <main className={styles.main}>{children}</main>
       </div>
       <Footer />
     </React.Fragment>

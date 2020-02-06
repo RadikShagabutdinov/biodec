@@ -6,7 +6,7 @@ interface INode {
   id: string;
   name: string;
   publicURL: string;
-  extension: 'png' | 'pdf',
+  extension: 'png' | 'pdf' | 'svg',
   childImageSharp: any,
 }
 
@@ -21,6 +21,7 @@ interface IProps {
 interface IAsetGroup {
   png: INode;
   pdf: INode;
+  svg: INode;
 }
 
 function getItem(edge: [IItem, IItem]): IAsetGroup {
@@ -28,19 +29,19 @@ function getItem(edge: [IItem, IItem]): IAsetGroup {
 }
 
 function Thumbnail({ edges }: IProps) {
-  const { png, pdf } = getItem(edges);
+  const { svg, pdf } = getItem(edges);
   return (
     <a
       href={pdf.publicURL}
       target="_blank"
       rel="noopener noreferrer"
       className={styles.link}
+      title={pdf.name}
     >
-      <Img
-        fluid={png.childImageSharp.fluid}
-        className={styles.thumbnail}
-      />
-      {pdf.name}
+      <div className={styles.wrapper}>
+        <img src={svg.publicURL} alt="" className={styles.ico} />
+      </div>
+      {svg.name}
     </a>
   );
 }

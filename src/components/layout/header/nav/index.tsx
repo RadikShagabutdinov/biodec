@@ -1,25 +1,36 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
 import styles from './nav.module.css';
+
+function goToSmooth(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+  event.preventDefault();
+  const target = event.currentTarget.getAttribute('href');
+  const el = document.querySelector(target);
+  if (el && typeof el.scrollIntoView === 'function') {
+    el.scrollIntoView({ behavior: 'smooth' });
+    // window.location.hash = target;
+  } else {
+    window.location.hash = target;
+  }
+}
 
 function Nav() {
   return (
     <nav className={styles.container}>
       <ul className={styles.list}>
         <li className={styles.item}>
-          <Link className={styles.link} activeClassName={styles.active} to="/about">О нас</Link>
+          <a className={styles.link} onClick={goToSmooth} href="#about">О нас</a>
         </li>
         <li className={styles.item}>
-          <Link className={styles.link} activeClassName={styles.active} to="/product">продукты</Link>
+          <a className={styles.link} onClick={goToSmooth} href="#products">продукты</a>
         </li>
         <li className={styles.item}>
-          <Link className={styles.link} activeClassName={styles.active} to="/papers">документы</Link>
+          <a className={styles.link} onClick={goToSmooth} href="#papers">документы</a>
         </li>
         <li className={styles.item}>
-          <Link className={styles.link} activeClassName={styles.active} to="/faq">FAQ</Link>
+          <a className={styles.link} onClick={goToSmooth} href="#faq">FAQ</a>
         </li>
         <li className={styles.item}>
-          <Link className={styles.link} activeClassName={styles.active} to="/contacts">контакты</Link>
+          <a className={styles.link} onClick={goToSmooth} href="#contacts">контакты</a>
         </li>
       </ul>
     </nav>

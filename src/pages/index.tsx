@@ -1,29 +1,22 @@
 import * as React from 'react';
-import Img from "gatsby-image";
 import { useStaticQuery, graphql } from 'gatsby'
 import Layout from '../components/layout';
-import styles from './home/home.module.css';
+import Solution from '../components/solution';
+import About from '../components/about';
+import Products from '../components/products';
+import Papers from '../components/papers';
+import FAQ from '../components/faq';
+import Contacts from '../components/contacts';
 
 function HomePage() {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: {eq: "sfyt.png"}) {
-        childImageSharp {
-          fluid(maxWidth: 50) {
-            aspectRatio
-            src
-            srcSet
-          }
-        }
-      }
-    }
-  `);
   return (
     <Layout title="Главная">
-      <Img
-        fluid={data.placeholderImage.childImageSharp.fluid}
-        className={styles.img}
-      />
+      <Solution />
+      <About />
+      <Products />
+      <Papers />
+      <FAQ/>
+      <Contacts />
     </Layout>
   )
 }
