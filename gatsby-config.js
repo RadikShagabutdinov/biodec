@@ -42,6 +42,14 @@ module.exports = {
         allExtensions: true,
       }
     },
+    {
+      resolve: `gatsby-plugin-yandex-metrika`,
+      options: {
+        trackingId: process.env.YANDEX_METRIKA_TRACKING_ID,
+        webvisor: true,
+        trackHash: true,
+      },
+    }
     
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

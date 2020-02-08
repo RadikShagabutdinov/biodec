@@ -4,7 +4,6 @@ import makeCancelable, { PromiseCanceleable } from '../makeCancelable';
 export type ScriptAttributes = Record<string, string>;
 
 function setAttributes(el: Element, attr: ScriptAttributes) {
-  console.log(attr, '@@@@@');
   Object.entries(attr).forEach((a) => {
     el.setAttribute(a[0], a[1])
   });
