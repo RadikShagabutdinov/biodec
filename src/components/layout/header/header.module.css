@@ -25,7 +25,13 @@
   z-index: 10;
   box-shadow: 0px 8px 16px rgba(113, 113, 113, 0.1);
   border-bottom: 1px solid #DEE2E6;
-  background-color: #F0EFEA;
+  background-color: #f0efea;
+}
+@supports (-webkit-backdrop-filter: blur(10px)) {
+  .container {
+    backdrop-filter: blur(25px);
+    background: none;
+  }
 }
 
 .scrolled {
@@ -41,11 +47,16 @@
 .company {
   display: flex;
   align-items: flex-end;
+  position: relative;
 }
 
 .slogan {
   color: #00826B;
   padding-left: 10px;
   font-size: 12px;
-  display: none;
+  font-style: italic;
+  position: absolute;
+  right: 0;
+  transform: translateX(80%);
+  bottom: -8px;
 }

@@ -47,6 +47,6 @@
 .fb {
   background: url('./facebook.svg') scroll no-repeat center / 28px;
 }
-.vk::after {
-  background: url('./vk.svg') scroll no-repeat center / contain;
+.li {
+  background: url('./li.svg') scroll no-repeat center / contain;
 }

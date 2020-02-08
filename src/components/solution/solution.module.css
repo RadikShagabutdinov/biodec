@@ -1,6 +1,18 @@
 .container {
-  margin: 120px auto;
+  margin: 100px auto 30px;
   padding: 0 40px;
+  position: relative;
+}
+.container::before {
+  content: "";
+  background: url("./fon.svg") scroll no-repeat right top;
+  display: block;
+  position: absolute;
+  top: -25%;
+  left: -5%;
+  bottom: -19%;
+  right: 0;
+  opacity: 0.25;
 }
 .content {
   text-align: center;

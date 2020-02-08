@@ -1,6 +1,8 @@
 .container {
-  margin: 120px auto;
-  scroll-margin-top: 130px;
+  margin: 0 auto;
+  padding-top: 130px;
+  position: relative;
+  z-index: 2;
 }
 
 .content {
@@ -9,7 +11,7 @@
   margin-bottom: 60px;
 }
 .text {
-  columns: 2 250px;
+  columns: 2 300px;
   column-gap: 40px;
   line-height: 28px;
   font-size: 18px;
@@ -20,6 +22,8 @@
 .text p {
   /* display: inline-block; */
   margin-bottom: 20px;
+  color: #414141;
+  font-size: 18px;
 }
 .subtitle {
   font-size: 40px;
@@ -51,7 +55,7 @@
   line-height: 20px;
   position: relative;
   border-radius: 10px;
-  color: #000;
+  color: #414141;
   box-shadow: 0px 8px 16px rgba(113, 113, 113, 0.1);
 }
 .item:first-child {

@@ -1263,6 +1263,11 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
+"@types/googlemaps@^3.39.2":
+  version "3.39.2"
+  resolved "https://registry.yarnpkg.com/@types/googlemaps/-/googlemaps-3.39.2.tgz#a85721970305f7b6e50b1369aed53be35485d11a"
+  integrity sha512-eQNK23aCejjTF/HCzMObVPisnj6oBpWerhKpm849xW5JYocIHpnHnGYzWc9w076hIEpMt0bAxyPOaCoruYeGqg==
+
 "@types/history@*":
   version "4.7.3"
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.3.tgz#856c99cdc1551d22c22b18b5402719affec9839a"

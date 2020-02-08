@@ -17,6 +17,16 @@ function Media() {
             <span hidden>Facebook</span>
           </a>
         </li>
+        <li className={styles.item}>
+          <a
+            href="https://www.facebook.com/biodecltd"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cx(styles.link, styles.li)}
+          >
+            <span hidden>Linkedin</span>
+          </a>
+        </li>
       </ul>
     </div>
   );
