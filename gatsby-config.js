@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: `Biodec`,
@@ -45,9 +49,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-yandex-metrika`,
       options: {
-        trackingId: process.env.YANDEX_METRIKA_TRACKING_ID,
-        webvisor: true,
-        trackHash: true,
+        trackingId: process.env.YANDEX_TRACKING_ID,
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
       },
     }
     
