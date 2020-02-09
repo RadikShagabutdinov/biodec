@@ -24,7 +24,7 @@
 
 .container {
   background-color: #fff;
-  padding-bottom: 10px;
+  padding-bottom: 18px;
   position: sticky;
   width: 100%;
   top: 0;
@@ -63,7 +63,7 @@
   font-style: italic;
   position: absolute;
   right: 0;
-  transform: translateX(80%);
-  bottom: -8px;
+  transform: translateX(50%);
+  bottom: -11px;
   font-family: 'Pacifico', cursive;
 }

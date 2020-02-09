@@ -5,7 +5,11 @@ import Nav from './nav';
 import styles from './header.module.css';
 import { updateStyle } from '../../../lib/domHelper';
 
-function handlClick() {
+function handlClick(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+  if (typeof document.body.scrollIntoView === 'function') {
+    event.preventDefault();
+    document.body.scrollIntoView({ behavior: 'smooth' });
+  }
   const drawer: HTMLElement = document.querySelector('[data-element="drawer"');
   const clip: HTMLElement = document.querySelector('[data-element="clip"');
   updateStyle(drawer, [{ name: 'width', value: null }, {name: 'transform', value: null }]);

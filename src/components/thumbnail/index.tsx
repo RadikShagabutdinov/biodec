@@ -39,7 +39,7 @@ function Thumbnail({ edges }: IProps) {
       title={pdf.name}
     >
       <div className={styles.wrapper}>
-        <img src={svg.publicURL} alt="" className={styles.ico} />
+        <img src={svg.publicURL} alt={svg.name} className={styles.ico} />
       </div>
       {svg.name}
     </a>
