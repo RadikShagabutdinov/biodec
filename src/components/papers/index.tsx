@@ -32,6 +32,7 @@ function Papers() {
   `);
   return (
     <section id="papers" className={cx('inner', styles.container)}>
+      <div className="sk" />
       <h2 className={cx('title', styles.title)}>Документы</h2>
       <ul className={styles.list}>
         {

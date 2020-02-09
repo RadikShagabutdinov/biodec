@@ -19,6 +19,7 @@ function About() {
 
   return (
     <section id="about" className={cx('inner', styles.container)}>
+      <div className="sk" />
       <figure className={styles.ceo}>
         <Img
           fluid={data.placeholderImage.childImageSharp.fluid}

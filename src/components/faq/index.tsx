@@ -6,6 +6,7 @@ import styles from './faq.module.css';
 function FAQ() {
   return (
     <section id="faq" className={cx('inner', styles.container)}>
+      <div className="sk" />
       <h2 className={cx('title', styles.title)}>FAQ</h2>
       <ul className={styles.list}>
         <li className={styles.item}>

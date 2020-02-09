@@ -3,6 +3,14 @@ import { Link, useStaticQuery, graphql } from 'gatsby';
 import cx from 'classnames';
 import Nav from './nav';
 import styles from './header.module.css';
+import { updateStyle } from '../../../lib/domHelper';
+
+function handlClick() {
+  const drawer: HTMLElement = document.querySelector('[data-element="drawer"');
+  const clip: HTMLElement = document.querySelector('[data-element="clip"');
+  updateStyle(drawer, [{ name: 'width', value: null }, {name: 'transform', value: null }]);
+  updateStyle(clip, [{ name: 'clip', value: null }]);
+}
 
 function Header() {
   const data = useStaticQuery(graphql`
@@ -23,7 +31,7 @@ function Header() {
     <header className={styles.container}>
       <div className={cx('inner' ,styles.inner)}>
         <div className={styles.company}>  
-          <Link to="/" className={styles.link}>
+          <Link to="/" className={styles.link} onClick={handlClick}>
             <img src={data.logo.publicURL} className={styles.logo} alt="Biodec" />
           </Link>
           <p className={styles.slogan}>Экономия для экологии</p>

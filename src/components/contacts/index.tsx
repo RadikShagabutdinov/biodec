@@ -23,6 +23,7 @@ class Contacts extends React.Component<Props> {
   render() {
     return (
       <section id="contacts" className={styles.container}>
+        <div className="sk" />
         <h2 className={cx('title', styles.title)}>Контакты</h2>
         <div className={styles.content}>
           <div id="map" className={styles.map} />

@@ -1,5 +1,6 @@
 .container {
   padding-top: 130px;
+  position: relative;
 }
 .map {
   height: 400px;

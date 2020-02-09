@@ -1,26 +1,52 @@
 .container {
   margin-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  position: relative;
 }
 
 .list {
   list-style-type: none;
+  position: relative;
   display: flex;
-  justify-content: center;
+  color: #414141;
 }
 
 .item {
   padding: 0 20px;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: currentColor;
 }
 
 .item:first-child {
   padding-left: 0;
 }
+.item:last-child {
+  padding-right: 0;
+}
 
 .link {
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
 }
-.link.active {
-  color: rgb(56, 128, 108);
+.clip {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  clip: rect(0px, 0px, 50px, 0px);
+  transition: all 0.5s ease-out;
+}
+.drawer {
+  position: absolute;
+  width: 0px;
+  background: #3CD296;
+  height: 50px;
+  border-radius: 25px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: all 0.5s ease-out;
 }

@@ -5,6 +5,7 @@ import styles from './products.module.css';
 function Products() {
   return (
     <section id="products" className={cx('inner', styles.container)}>
+      <div className="sk" />
       <div className={styles.content}>
         <h2 className="title">Продукты</h2>
         <div className={styles.text}>

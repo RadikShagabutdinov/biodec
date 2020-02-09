@@ -1,6 +1,6 @@
 .container {
-  margin: 100px auto 30px;
-  padding: 0 40px;
+  margin: 0px auto 30px;
+  padding: 130px 40px 0;
   position: relative;
 }
 .container::before {
