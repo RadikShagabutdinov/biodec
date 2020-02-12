@@ -29,7 +29,7 @@ function About() {
       </figure>
       <div className={styles.content}>
         <h2 className={cx('title', styles.title)}>О нас</h2>
-        <p className={styles.descreiption}>Компания ООО &laquo;Биодек&raquo; - молодая команда с большим <br/>опытом применения химических добавок для ячеистого бетона.</p>
+        <p className={styles.descreiption}>Компания ООО &laquo;Биодек&raquo; - молодая команда с большим опытом применения химических добавок для ячеистого бетона.</p>
         <figure className={cx(styles.ceo, styles.mb)}>
         <Img
           fluid={data.placeholderImage.childImageSharp.fluid}
