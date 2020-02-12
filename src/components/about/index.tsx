@@ -20,7 +20,7 @@ function About() {
   return (
     <section id="about" className={cx('inner', styles.container)}>
       <div className="sk" />
-      <figure className={styles.ceo}>
+      <figure className={cx(styles.ceo, styles.dst)}>
         <Img
           fluid={data.placeholderImage.childImageSharp.fluid}
           className={styles.founder}
@@ -30,6 +30,13 @@ function About() {
       <div className={styles.content}>
         <h2 className={cx('title', styles.title)}>О нас</h2>
         <p className={styles.descreiption}>Компания ООО &laquo;Биодек&raquo; - молодая команда с большим <br/>опытом применения химических добавок для ячеистого бетона.</p>
+        <figure className={cx(styles.ceo, styles.mb)}>
+        <Img
+          fluid={data.placeholderImage.childImageSharp.fluid}
+          className={styles.founder}
+        />
+        <figcaption className={styles.caption}>Генеральный директор <br/> Баженов Игорь Владимирович</figcaption>
+      </figure>
         <div className={styles.text}>
           <p>Мы занимаемся разработкой, производством и поставкой химических композиций для повышения качества газобетона и снижения его себестоимости.</p>
           <p>Наши успехи подтверждаются результатами наших клиентов.</p>

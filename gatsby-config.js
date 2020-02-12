@@ -54,6 +54,14 @@ module.exports = {
         trackLinks: true,
         accurateTrackBounce: true,
       },
+    },
+    {
+      resolve: "gatsby-plugin-sentry",
+      options: {
+        dsn: process.env.SENTRY_DSN_URL,
+        environment: process.env.NODE_ENV,
+        enabled: (() => ["production", "stage"].indexOf(process.env.NODE_ENV) !== -1)()
+      }
     }
     
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import cx from 'classnames';
 import SEO from '../seo';
 import Header from './header';
 import Footer from './footer';

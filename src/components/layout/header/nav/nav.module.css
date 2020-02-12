@@ -7,6 +7,12 @@
   position: relative;
 }
 
+@media screen and (max-width: 749px) {
+  .wrapper {
+    display: none;
+  }
+}
+
 .list {
   list-style-type: none;
   position: relative;

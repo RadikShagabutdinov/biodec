@@ -1,5 +1,4 @@
 .container {
-  padding-top: 130px;
   position: relative;
 }
 .map {
@@ -12,58 +11,28 @@
 }
 .content {  
   position: relative;
-  display: flex;
   overflow: hidden;
+  display: flex;
 }
 .contacts {
-  flex: 0 0 35%;
-  min-width: 450px;
   position: relative;
   text-align: center;
-  width: 35%;
   box-shadow: -10px 0px 15px rgba(0, 0, 0, 0.1);
 }
 .header {
   background-color: #fff;
-  height: 60%;
-  display: flex;
   font-size: 16px;
   line-height: 24px;
   position: relative;
   padding: 10px;
-  justify-content: space-around;
-  align-items: center;
+  
 }
-.header::before {
-  content: "";
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border: 40px solid transparent;
-  border-right-color: #fff;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  transform: translateX(-100%);
-}
+
 .column {
   display: flex;
   flex-direction: column;
 }
-.subtitle {
-  font-size: 18px;
-  margin-bottom: 18px;
-}
-.region {
-  /* margin-top: auto; */
-  /* margin-bottom: 30px; */
-  /* font-weight: bold; */
-}
 .place {
-  /* margin-bottom: auto; */
-  /* color: #248E65; */
   font-weight: normal;
 }
 .footer {
@@ -83,4 +52,65 @@
 .mail {
   text-decoration: none;
   margin-bottom: auto;
+}
+@media screen and (min-width: 750px) {
+  .container {
+    padding-top: 130px;
+  }
+  .content {
+    display: flex;
+  }
+  .contacts {
+    flex: 0 0 35%;
+    min-width: 450px;
+    width: 35%;
+  }
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60%;
+  }
+  .header::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 40px solid transparent;
+    border-right-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: translateX(-100%);
+  }
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .container {
+    padding-top: 30px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .map {
+    order: 2;
+  }
+  .contacts {
+    order: 1;
+  }
+  .column {
+    margin: 20px auto;
+  }
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .footer {
+    margin: 18px auto;
+  }
 }

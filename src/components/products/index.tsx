@@ -7,7 +7,7 @@ function Products() {
     <section id="products" className={cx('inner', styles.container)}>
       <div className="sk" />
       <div className={styles.content}>
-        <h2 className="title">Продукты</h2>
+        <h2 className={cx('title', styles.title)}>Продукты</h2>
         <div className={styles.text}>
           <p>Компания ООО &laquo;Биодек&raquo; является разработчиком и производителем 
           линейки органических добавок для производства ячеистого бетона серии

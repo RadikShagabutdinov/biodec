@@ -17,12 +17,6 @@ body {
   font-family: 'Roboto';
 }
 
-.inner {
-  max-width: 1440px;
-  min-width: 1024px;
-  padding: 0 40px;
-}
-
 /* START OF ARTICLE GLOBAL STYLE */
 .article {
   font-weight: normal;
@@ -34,7 +28,6 @@ body {
   color: #00826B;
   font-size: 48px;
   font-weight: normal;
-  margin-bottom: 48px;
 }
 
 .article .link {
@@ -75,6 +68,36 @@ body {
 }
 .article ol li {
   padding-left: 15px;
+}
+@media screen and (min-width: 769px) {
+  .inner {
+    max-width: 1440px;
+    min-width: 1024px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .title {
+    margin-bottom: 48px;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 768px) {
+  .inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .title {
+    margin-bottom: 48px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .inner {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 750px;
+  }
+  .title {
+    margin-bottom: 24px;
+  }
 }
 /* END OF ARTICLE GLOBAL STYLE */
 .sk {

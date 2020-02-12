@@ -17,16 +17,16 @@ function Media() {
             <span hidden>Facebook</span>
           </a>
         </li>
-        {/* <li className={styles.item}>
+        <li className={styles.item}>
           <a
-            href="https://linkedin.com/company/biodec-ltd"
+            href="https://www.linkedin.com/company/37259436"
             target="_blank"
             rel="noopener noreferrer"
             className={cx(styles.link, styles.li)}
           >
             <span hidden>Linkedin</span>
           </a>
-        </li> */}
+        </li>
       </ul>
     </div>
   );

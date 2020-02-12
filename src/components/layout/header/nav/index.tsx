@@ -5,10 +5,9 @@ import { slideDawer, slideClip, getElements } from './helpers';
 
 const PD = 20;
 
+let isNeedChangeHash = false;
+
 function clickHandler() {
-  let container = undefined;
-  let drawer = undefined;
-  let clip = undefined;
   return (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     const { currentTarget } = event;
     const target = currentTarget.getAttribute('href').replace('/', '');
@@ -16,12 +15,9 @@ function clickHandler() {
     if (el && typeof el.scrollIntoView === 'function') {
       event.preventDefault();
       el.scrollIntoView({ behavior: 'smooth' });
+      // isNeedChangeHash = true;
     }
-    if (typeof container === 'undefined' && typeof drawer === 'undefined') {
-      container = document.querySelector(`.${styles.wrapper}`).getBoundingClientRect();
-      drawer = document.querySelector(`.${styles.drawer}`);
-      clip = document.querySelector(`.${styles.clip}`);
-    }
+    const { container, drawer, clip } = getElements(styles);
     const t = currentTarget.getBoundingClientRect();
     slideDawer(drawer, t, container, PD);
     slideClip(clip, t, container, PD)
@@ -34,12 +30,9 @@ function getSection(): ReadonlyArray<Element> {
 
 function calback(entries) {
   const { target, isIntersecting } = entries[0];
-  if (isIntersecting) {
-    // const { container, drower, clip } = getElements(styles);
-    // const href = target.parentElement.id;
-    // const t = document.querySelector(`a[href="/#${href}"`).getBoundingClientRect();
-    // slideDawer(drower, t, container, 20);
-    // slideClip(clip, t, container, 20)
+  if (isIntersecting && isNeedChangeHash) {
+    // isNeedChangeHash = false;
+    // window.location.hash = target.parentElement.id;
   }
 }
 

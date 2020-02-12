@@ -52,7 +52,7 @@ class Accordion extends React.Component<Props, State> {
   refproxy = (el: HTMLElement | void) => {
     this.container = el;
     if (el) {
-      this.height = el.offsetHeight + 20;
+      this.height = el.offsetHeight + 30;
       this.setClose();
     }
   }

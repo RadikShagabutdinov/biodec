@@ -1,13 +1,11 @@
 .container {
   margin: 0 auto;
-  padding-top: 130px;
   position: relative;
 }
 .title {
   text-align: center;
 }
 .list {
-  width: 930px;
   position: relative;
   margin: 0 auto;
 }
@@ -22,4 +20,18 @@
   padding: 16px;
   line-height: 1.6;
   /* background-color: #2CAE7C; */
+}
+@media screen and (min-width: 750px) {
+  .container {
+    padding-top: 130px;
+  }
+  .list {
+    max-width: 930px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 749px) {
+  .container {
+    padding-top: 30px;
+  }
 }
