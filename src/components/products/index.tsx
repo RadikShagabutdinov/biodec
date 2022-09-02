@@ -15,7 +15,7 @@ function Products() {
           <p>Название линейки <strong>IQ</strong> определяет возможность добавок
           действовать избирательно, умно, в зависимости от поставленной и решаемой
           задачи. В связи с этим спектр добавок <strong>IQSolution</strong> включает
-          в себя три марки <strong>IQPor</strong>, <strong>IQFix</strong> и 
+          в себя три марки <strong>IQPor</strong>, <strong>IQMix</strong> и 
           <strong> IQStep</strong>.</p>
         </div>
       </div>
