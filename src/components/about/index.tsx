@@ -25,7 +25,7 @@ function About() {
           fluid={data.placeholderImage.childImageSharp.fluid}
           className={styles.founder}
         />
-        <figcaption className={styles.caption}>Генеральный директор <br/> Баженов Игорь Владимирович</figcaption>
+        <figcaption className={styles.caption}>Генеральный директор <br/> Цикарева Ирина Анатольевна</figcaption>
       </figure>
       <div className={styles.content}>
         <h2 className={cx('title', styles.title)}>О нас</h2>
