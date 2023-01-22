@@ -1,5 +1,5 @@
 import * as React from 'react';
-import makeCancelable, { PromiseCanceleable } from '../makeCancelable';
+import { PromiseCanceleable } from '../makeCancelable';
 
 export type ScriptAttributes = Record<string, string>;
 
@@ -39,7 +39,7 @@ export function scriptExist(src: string): [boolean, NodeListOf<Element>] {
 }
 
 export function removeNode(node: Element): void {
-  node.remove();
+  // node.remove();
 }
 
 function scriptLoader(WrappedComponent) {
