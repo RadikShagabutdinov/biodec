@@ -39,7 +39,7 @@ export function scriptExist(src: string): [boolean, NodeListOf<Element>] {
 }
 
 export function removeNode(node: Element): void {
-  // node.remove();
+  node.remove();
 }
 
 function scriptLoader(WrappedComponent) {
