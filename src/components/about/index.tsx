@@ -35,7 +35,7 @@ function About() {
           fluid={data.placeholderImage.childImageSharp.fluid}
           className={styles.founder}
         />
-        <figcaption className={styles.caption}>Генеральный директор <br/> Баженов Игорь Владимирович</figcaption>
+        <figcaption className={styles.caption}>Генеральный директор <br/> Цикарева Ирина Анатольевна</figcaption>
       </figure>
         <div className={styles.text}>
           <p>Мы занимаемся разработкой, производством и поставкой химических композиций для повышения качества газобетона и снижения его себестоимости.</p>

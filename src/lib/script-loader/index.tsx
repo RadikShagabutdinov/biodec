@@ -1,5 +1,5 @@
 import * as React from 'react';
-import makeCancelable, { PromiseCanceleable } from '../makeCancelable';
+import { PromiseCanceleable } from '../makeCancelable';
 
 export type ScriptAttributes = Record<string, string>;
 
